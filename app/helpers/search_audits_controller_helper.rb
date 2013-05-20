@@ -1,0 +1,2 @@
+module SearchAuditsControllerHelper
+end

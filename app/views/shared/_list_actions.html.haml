@@ -1,0 +1,7 @@
+- except ||= []
+- if can?(:read, object) && action_isnt_blacklisted(:read, except)
+  %td= link_to 'Show', object
+- if can?( :update, object) && action_isnt_blacklisted(:update, except)
+  %td= link_to 'Edit', [:edit, object]
+- if can?( :destroy, object) && action_isnt_blacklisted(:destroy, except)
+  %td= link_to 'Destroy', object, method: :delete, data: { confirm: 'Are you sure?' }

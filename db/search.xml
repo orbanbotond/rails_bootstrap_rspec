@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DistributedSearchXML payloadID = "123465678">
+  <Header version="1.0">
+    <From>
+      <Credential domain="DUNS">
+        <Identity>123456789</Identity>
+      </Credential>
+    </From>
+    <To>
+      <Credential domain="Name">
+        <Identity>Disneyland</Identity>
+      </Credential>
+    </To>
+    <Login>
+      <UserName>Apple123</UserName>
+      <Password>4566456</Password>
+      <AuthenticatedKey></AuthenticatedKey>
+    </Login>
+    </Header>
+  <Request>
+    <ItemSearchRequest operation="SimpleSearch">
+      <UserInfo>
+        <UserName></UserName>
+        <AppsUserName>ppan</AppsUserName>
+        <UserPhone></UserPhone>
+        <UserEmail>client2@gmail.com</UserEmail>
+      </UserInfo>
+      <SearchInfo>
+        <SearchLanguage>EN-US</SearchLanguage>
+        <SearchKeywords>XXY</SearchKeywords>
+        <SortBy order="DESC">Price</SortBy>
+        <ResultSize>15</ResultSize>
+        <StartResult>1</StartResult>
+      </SearchInfo>
+      <UserArea>
+        <SupplementalInfo name="Group">OU1</SupplementalInfo>
+        <SupplementalInfo name="Division">NorthEast</SupplementalInfo>
+      </UserArea>
+    </ItemSearchRequest>
+  </Request>
+</DistributedSearchXML>
